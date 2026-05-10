@@ -1,6 +1,6 @@
 # 3-Bit ALU
 
-# 1.  Overview
+## 1.  Overview
 
 This circuit implements a **3-Bit Arithmetic Logic Unit (ALU)** capable of performing arithmetic and logical operations on two 3-bit binary numbers.  
 
@@ -12,8 +12,6 @@ The ALU supports:
 - Bitwise AND
 
 The result is displayed on a **7-segment display in hexadecimal**.
-
-
 
 ###  Inputs and Outputs
 
@@ -61,7 +59,7 @@ The display will show 2 with the decimal point illuminated to indicate the resul
 
 ---
 
-# 2. ALU Operations
+## 2. ALU Operations
 
 The select line can be configured to perform the following operations - 
 
@@ -79,7 +77,7 @@ s[1] essentially selects the type of operation
 
 ---
 
-# 3. Architecture
+## 3. Architecture
 
 The ALU is divided into two main sections:
 
@@ -97,9 +95,9 @@ The following is a system diagram of the ALU -
 
 ![ALU Diagram](ALU.png)
 
-# 4. Arithmetic Operation
+## 4. Arithmetic Operation
 
-## 4.1 Arithmetic Unit Interface
+### 4.1 Arithmetic Unit Interface
 
 The arithmetic unit takes the operands and select lines as inputs and produces both a 4-bit absolute value and a sign indicator for display purposes.
 
@@ -112,8 +110,6 @@ The arithmetic unit takes the operands and select lines as inputs and produces b
 | `s[1:0]` | Input | Operation select lines (addition/subtraction control) |
 | `abs[3:0]` | Output | 4-bit absolute value of the arithmetic result |
 | `neg_flag` | Output | Negative sign flag (drives 7-segment DP) |
-
-
 
 ## 4.2 Arithmetic Unit Design
 
@@ -147,8 +143,8 @@ Hence MSB = 1 strictly means either
 - a sign bit in subtraction. 
 
 Determining whether the MSB = 1 is due to overflow or is sign bit is based on the value of s[0]:  whether the user's intent was subtraction or addition.
-### 4.2.2 2's Complement Arithmetic Implementation
 
+### 4.2.2 2's Complement Arithmetic Implementation
 
 2’s Complement allows the same binary adder circuit to perform both addition and subtraction by representing negative numbers in 2’s complement form.
 
@@ -216,6 +212,7 @@ Below is the circuit diagram for the Absolute Value Circuit.
 ![Absolute value circuit](abs.png)
 
 ---
+
  ## 5. Binary to 7 Segment Encoder
 
  The following was the truthe table from binary to displaying it's equivaled hex value in the seven segment display,
@@ -241,7 +238,6 @@ Below is the circuit diagram for the Absolute Value Circuit.
 F is not included as it is an unreachable value.
 
 This is implemented as a sum-of-products in the ALU.
-
 
 ## How to test
 
