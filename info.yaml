@@ -27,14 +27,14 @@ pinout:
   ui[7]: "s[0]"
 
   # Outputs
-  uo[0]: "A"
-  uo[1]: "B"
-  uo[2]: "C"
-  uo[3]: "D"
-  uo[4]: "E"
-  uo[5]: "F"
-  uo[6]: "G"
-  uo[7]: "DP"
+  uo[0]: "7Seg_A"
+  uo[1]: "7Seg_B"
+  uo[2]: "7Seg_C"
+  uo[3]: "7Seg_D"
+  uo[4]: "7Seg_E"
+  uo[5]: "7Seg_F"
+  uo[6]: "7Seg_G"
+  uo[7]: "7Seg_DP"
 
   # Bidirectional pins
   uio[0]: ""
