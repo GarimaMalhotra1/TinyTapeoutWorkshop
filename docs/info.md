@@ -53,9 +53,9 @@ s = 01 (subtract)
 1 - 3 = -2
 ```
 
-The display will show 2 with the decimal point illuminated to indicate the result is `-2`.
+The display will show 2 with the decimal point illuminated to indicate the result is `-2`
 
-<img src="minus_two.png" width="25%" alt="Minus two">
+![Minus Two on the 7 Segment Display](minus_two_7seg.png)
 
 ---
 
@@ -213,9 +213,9 @@ Below is the circuit diagram for the Absolute Value Circuit.
 
 ---
 
- ## 5. Binary to 7 Segment Encoder
+ ##  5. Binary to 7 Segment Encoder
 
- The following was the truthe table from binary to displaying it's equivaled hex value in the seven segment display,
+ The following was the truthe table from binary to displaying it's equivalent hex value in the seven segment display.
 
  | Binary | Hex | ABCDEFG (7SEG) |
 |--------|-----|----------------|
