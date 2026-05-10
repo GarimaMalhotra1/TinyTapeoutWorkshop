@@ -61,19 +61,14 @@ Example:
 ```text
 a = 001₂ (1)
 b = 011₂ (3)
+s = 01 (subtract)
 
 1 - 3 = -2
 ```
 
-The display will show:
+The display will show 2 with the decimal point illuminated to indicate the result is `-2`.
 
-```text
-2 with the decimal point illuminated
-```
-
-to indicate the result is `-2`.
-
-![-2 in 7 seg](minus_two.png)
+<img src="minus_two.png" width="25%" alt="Minus two">
 
 ---
 
@@ -261,7 +256,7 @@ This is implemented as a sum-of-products in the ALU.
 
 ## How to test
 
-User can test by setting values of a[3:0], b[3:0] and selecting the desired operation using the select lines s[1:0]
+User can test by setting values of a[2:0], b[2:0] and selecting the desired operation using the select lines s[1:0]
 
 ###  Example
 
@@ -286,4 +281,4 @@ Then:
 
 ## External hardware
 
-Seven Segement Display
+Seven Segment Display
