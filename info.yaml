@@ -4,8 +4,7 @@ project:
   title:        "3-Bit ALU"      # Project title
   author:       "Garima Malhotra"      # Your name
   discord:      "nonu1208"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "This circuit implements a 3-Bit Arithmetic Logic Unit (ALU) capable of performing arithmetic and logical operations on two 3-bit binary numbers.  
-"      # One line description of what your project does
+  description:  "This circuit implements a 3-Bit Arithmetic Logic Unit (ALU) capable of performing arithmetic and logical operations on two 3-bit binary numbers."      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
