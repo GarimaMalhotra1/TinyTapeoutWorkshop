@@ -73,6 +73,8 @@ The display will show:
 
 to indicate the result is `-2`.
 
+![-2 in 7 seg](minus_two.png)
+
 ---
 
 # 2. ALU Operations
@@ -102,13 +104,14 @@ The ALU is divided into two main sections:
    - Implemented using a ripple-carry adder
    - Subtraction is achieved using **2’s complement arithmetic**
 
-   
-
 2. **Logic Unit**
    - Performs bitwise AND and OR operations
 
 A multiplexer selects the appropriate output based on the select input `s[1:0]`.
 
+The following is a system diagram of the ALU - 
+
+![ALU Diagram](ALU.png)
 
 # 4. Arithmetic Operation
 
@@ -225,6 +228,8 @@ To convert the 2's complement representation into absolute value, we first evalu
 A cascade of half adders is used to add 1 to the inverted bits.
 
 Below is the circuit diagram for the Absolute Value Circuit.
+
+![Absolute value circuit](abs.png)
 
 ---
  ## 5. Binary to 7 Segment Encoder
