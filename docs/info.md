@@ -11,7 +11,7 @@ The ALU supports:
 - Bitwise OR
 - Bitwise AND
 
-The result is displayed on a **7-segment display in hexadecimal**.
+The result is displyed on a **7-segment display in hexadecimal**.
 
 ###  Inputs and Outputs
 
