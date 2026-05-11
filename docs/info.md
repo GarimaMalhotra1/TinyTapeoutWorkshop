@@ -93,7 +93,7 @@ A multiplexer selects the appropriate output based on the select input `s[1:0]`.
 
 The following is a system diagram of the ALU - 
 
-![ALU Diagram](ALU.png)
+![ALU Diagram](ALU_diagram.png)
 
 ## 4. Arithmetic Operation
 
@@ -237,11 +237,13 @@ Below is the circuit diagram for the Absolute Value Circuit.
 
 F is not included as it is an unreachable value.
 
-This is implemented as a sum-of-products in the ALU.
+The binary expression for each segment of the display is reduced using karnaugh map and is implemented as a sum-of-products (minterms) in the ALU.
 
 ## How to test
 
-User can test by setting values of a[2:0], b[2:0] and selecting the desired operation using the select lines s[1:0]
+User can test by setting values of operands a[2:0], b[2:0] and selecting the desired operation using the select lines s[1:0].
+The circuit starts in an unknown state, so the seven segment display dispalys a random sequence on startup.
+It takes 2 clock cycles/ button presses for triggering clock for the input to propagate through to the output.
 
 ###  Example
 
@@ -260,6 +262,8 @@ Then:
 | `01` | `5 - 7` | `1110₂` | `2₁₆` and Decimal Point (indicating negative sign)|
 | `10` | `101 OR 111` | `111₂` | `7₁₆` |
 | `11` | `101 AND 111` | `101₂` | `5₁₆` |
+
+After setting the input switches, trigger the clock twice to see the results on the seven segment display.
 
 ---
 
