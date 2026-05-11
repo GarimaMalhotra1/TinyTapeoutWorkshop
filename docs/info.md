@@ -107,9 +107,9 @@ The arithmetic unit takes the operands and select lines as inputs and produces b
 |--------|----------|-------------|
 | `a[2:0]` | Input | First 3-bit operand |
 | `b[2:0]` | Input | Second 3-bit operand |
-| `s[1:0]` | Input | Operation select lines (addition/subtraction control) |
+| `s[0]` | Input | Operation select line (addition/subtraction control) |
 | `abs[3:0]` | Output | 4-bit absolute value of the arithmetic result |
-| `neg_flag` | Output | Negative sign flag (drives 7-segment DP) |
+| `sign_bit` | Output | Indicate sign of result from arithmetic (used to drive 7-segment DP) |
 
 ## 4.2 Arithmetic Unit Design
 
